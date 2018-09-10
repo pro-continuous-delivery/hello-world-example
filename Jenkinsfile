@@ -59,7 +59,7 @@ sh 'curl -u${credentials} -X PUT "http://54.89.156.240:8081/artifactory/api/stor
 }
 }
 } catch (e) {
-    // If there was an exception thrown, the build failed
+    // If there was an exception thrown, the build failed check
     currentBuild.result = "FAILED"
     throw e
   } finally {
